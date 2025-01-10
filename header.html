@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Header styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #3a3a3a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: top;
+            position-area: top;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000 !important;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .title {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .user-name {
+            margin-left: auto;
+        }
+
+        /* Sliding menu styling */
+        #menu {
+            z-index: 1000 !important;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 75%;
+            height: 100%;
+            background-color: #484848 !important;
+            color: white;
+            transition: left 0.3s ease-in-out;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #menu .close-btn {
+            z-index: 1000;
+            font-size: 24px;
+            color: white;
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        #menu ul {
+            z-index: 1000 !important;
+            list-style: none;
+            padding: 0;
+        }
+
+        #menu ul li {
+            z-index: 1000 !important;
+            margin: 15px 0;
+        }
+
+        #menu ul li a {
+            z-index: 1000 !important;
+            color: white;
+            text-decoration: none;
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="menu-icon" onclick="toggleMenu()">☰</section>
+        <section class="title">たーけクラウドシステム</section>
+    </header>
+<!--なんでかz-indexが効かないのでいったんコメントアウト
+    <section id="menu">
+        <section class="close-btn" onclick="toggleMenu()">×</section>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <p style="color: #c0c0c0">……………………</p>
+        <small>&copy; 2025 t-cloudsystem.</small>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const menuStyle = window.getComputedStyle(menu);
+            const currentLeft = menuStyle.left;
+
+            if (currentLeft === '0px') {
+                menu.style.left = '-100%'; // メニューを閉じる
+            } else {
+                menu.style.left = '0'; // メニューを開く
+            }
+        }
+    </script>-->
+</body>
+</html>

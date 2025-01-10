@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Lusitana');
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  z-index: -1;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background: #444444;
+}
+
+#header {
+/*  background: url(https://lh5.googleusercontent.com/S6g7vP76OK5xywllzt8ENRTDIV5FsFD59kCzOLHFyuaqQe1PREUhjN5jWV_UoSpp19iyCxZub3uqjV21AEuRxr4=w16383) no-repeat center top;
+  background-size: cover; */
+  position: fixed;
+  height: 90%;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: -1000;
+}
+
+#header .center {
+  background: rgba(0,0,0,0.25);
+  text-align: center;
+  position: absolute;
+  color: #FFFFFF;
+  color: #F5F7FA;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+#header .center .middle {
+  position: absolute;
+  margin-top: -8em;
+  right: 0;
+  left: 0;
+  top: 50%;
+}
+
+#header .center .middle h1 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 5em;
+  margin: 0;
+}
+
+#header .center .middle span {
+  line-height: 5em;
+  font-size: 1em;
+}
+
+#pageHr {
+  background: #fff;
+  position: relative;
+  height: 5px;
+  display: block;
+  right: 0px;
+  left: 0px;
+  top: 90%;
+}
+
+#pageHr > i {
+  margin: -22.5px;
+  border: 5px solid #fff;
+  height: 40px;
+  width: 40px;
+  background: #778899;
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+#pageHr > i > i {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  line-height: 36.8px;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  display: block;
+  transform: rotate(-45deg);
+}
+
+#page {
+  background: #fffafa;
+  position: relative;
+  height: 123.45%;
+  top: 90%;
+  padding: 10% 40px;
+  text-align: center;
+}
