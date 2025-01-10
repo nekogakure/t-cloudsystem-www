@@ -18,10 +18,11 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            position: top;
-            position-area: top;
+            position: fixed;
+            top: 0;
+            width: 100%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000 !important;
+            z-index: 1000;
         }
 
         .menu-icon {
@@ -40,13 +41,13 @@
 
         /* Sliding menu styling */
         #menu {
-            z-index: 1000 !important;
+            z-index: 999;
             position: fixed;
             top: 0;
             left: -100%;
-            width: 75%;
+            width: 20%;
             height: 100%;
-            background-color: #484848 !important;
+            background-color: #484848;
             color: white;
             transition: left 0.3s ease-in-out;
             padding: 20px;
@@ -54,7 +55,6 @@
         }
 
         #menu .close-btn {
-            z-index: 1000;
             font-size: 24px;
             color: white;
             text-align: left;
@@ -63,21 +63,17 @@
         }
 
         #menu ul {
-            z-index: 1000 !important;
             list-style: none;
             padding: 0;
         }
 
         #menu ul li {
-            z-index: 1000 !important;
             margin: 15px 0;
         }
 
         #menu ul li a {
-            z-index: 1000 !important;
             color: white;
             text-decoration: none;
-            background-color: transparent !important;
         }
     </style>
 </head>
@@ -86,7 +82,6 @@
         <section class="menu-icon" onclick="toggleMenu()">☰</section>
         <section class="title">たーけクラウドシステム</section>
     </header>
-<!--なんでかz-indexが効かないのでいったんコメントアウト
     <section id="menu">
         <section class="close-btn" onclick="toggleMenu()">×</section>
         <ul>
@@ -110,6 +105,6 @@
                 menu.style.left = '0'; // メニューを開く
             }
         }
-    </script>-->
+    </script>
 </body>
 </html>
