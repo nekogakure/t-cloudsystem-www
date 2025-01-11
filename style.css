@@ -11,12 +11,12 @@ html, body {
 body {
   z-index: -1;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  background: #444444;
+  background: #778899;
 }
 
 #header {
-/*  background: url(https://lh5.googleusercontent.com/S6g7vP76OK5xywllzt8ENRTDIV5FsFD59kCzOLHFyuaqQe1PREUhjN5jWV_UoSpp19iyCxZub3uqjV21AEuRxr4=w16383) no-repeat center top;
-  background-size: cover; */
+  background: url(https://lh5.googleusercontent.com/S6g7vP76OK5xywllzt8ENRTDIV5FsFD59kCzOLHFyuaqQe1PREUhjN5jWV_UoSpp19iyCxZub3uqjV21AEuRxr4=w16383) no-repeat center top;
+  background-size: cover;
   position: fixed;
   height: 90%;
   bottom: 10%;
